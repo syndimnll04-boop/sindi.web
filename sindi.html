@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sindi Natal Claudia Manalu</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    :root{
+      --primary:#b9a6e8;   /* soft purple */
+      --secondary:#ffffff;
+      --accent:#e6ddff;
+      --text:#4b4453;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:linear-gradient(135deg, var(--accent), var(--secondary));
+      color:var(--text);
+      min-height:100vh;
+    }
+
+    header{
+      padding:80px 20px 60px;
+      text-align:center;
+      animation: fadeDown 1.2s ease;
+    }
+
+    header img{
+      width:160px;
+      height:160px;
+      object-fit:cover;
+      border-radius:50%;
+      border:6px solid var(--secondary);
+      box-shadow:0 15px 40px rgba(0,0,0,0.15);
+      margin-bottom:20px;
+    }
+
+    header h1{
+      font-weight:600;
+      font-size:2rem;
+    }
+
+    header p{
+      font-size:0.95rem;
+      opacity:0.85;
+      margin-top:6px;
+    }
+
+    section{
+      max-width:900px;
+      margin:0 auto 60px;
+      padding:0 20px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.75);
+      backdrop-filter:blur(12px);
+      border-radius:22px;
+      padding:30px;
+      box-shadow:0 20px 40px rgba(0,0,0,0.08);
+      margin-bottom:30px;
+      animation: fadeUp 1.2s ease;
+    }
+
+    .card h2{
+      font-size:1.3rem;
+      font-weight:500;
+      margin-bottom:18px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      color:#5c4d8d;
+    }
+
+    .info-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:16px;
+    }
+
+    .info-item{
+      background:var(--secondary);
+      padding:14px 18px;
+      border-radius:14px;
+      font-size:0.9rem;
+    }
+
+    .hobby-list{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .hobby{
+      background:var(--primary);
+      color:white;
+      padding:10px 18px;
+      border-radius:20px;
+      font-size:0.85rem;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      transition:transform .3s ease, box-shadow .3s ease;
+    }
+
+    .hobby:hover{
+      transform:translateY(-4px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .contact a{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+      color:var(--text);
+      padding:14px 18px;
+      border-radius:14px;
+      background:var(--secondary);
+      margin-bottom:12px;
+      transition:all .3s ease;
+    }
+
+    .contact a:hover{
+      background:var(--primary);
+      color:white;
+      transform:translateX(6px);
+    }
+
+    footer{
+      text-align:center;
+      font-size:0.8rem;
+      opacity:0.7;
+      padding-bottom:30px;
+    }
+
+    @keyframes fadeUp{
+      from{opacity:0; transform:translateY(30px)}
+      to{opacity:1; transform:translateY(0)}
+    }
+
+    @keyframes fadeDown{
+      from{opacity:0; transform:translateY(-30px)}
+      to{opacity:1; transform:translateY(0)}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="foto saya.jpg" alt="foto saya.">
+    <h1>Sindi Natal Claudia Manalu</h1>
+    <p>Soft • Modern • Personal Website</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2><i class="fa-regular fa-user"></i> Tentang Saya</h2>
+      <div class="info-grid">
+        <div class="info-item">Tanggal Lahir : <b>25 Desember 2003</b></div>
+        <div class="info-item">Umur : <b>22 Tahun</b></div>
+        <div class="info-item">Zodiak : <b>Capricorn</b></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><i class="fa-solid fa-heart"></i> Hobi & Minat</h2>
+      <div class="hobby-list">
+        <div class="hobby"><i class="fa-solid fa-person-swimming"></i> Berenang</div>
+        <div class="hobby"><i class="fa-solid fa-microphone"></i> Bernyanyi</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><i class="fa-solid fa-envelope"></i> Kontak</h2>
+      <div class="contact">
+        <a href="mailto:Syndimnll04gmail.com"><i class="fa-solid fa-envelope"></i> syndimnll04gmail.com</a>
+        <a href="tel:082274476460"><i class="fa-solid fa-phone"></i> 0822 7447 6460</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 • Sindi Natal Claudia Manalu
+  </footer>
+
+</body>
+</html>

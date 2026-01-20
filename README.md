@@ -1,0 +1,2 @@
+# sindi.web
+Sindi.html
